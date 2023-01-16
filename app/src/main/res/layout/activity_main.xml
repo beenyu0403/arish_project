@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="80dp">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/main_home_blur"/>
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/now_img"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rv_main"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="450dp"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="vertical">
+                    <FrameLayout
+                        android:id="@+id/reservation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible">
+                        <ImageView
+                            android:layout_width="140dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:src="@drawable/blackbox"/>
+
+                        <ImageView
+                            android:layout_width="370dp"
+                            android:layout_height="350dp"
+                            android:src="@drawable/box3"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="예약된 전시"
+                            android:fontFamily="@font/notosanskrmedium"
+                            android:textSize="20sp"
+                            android:textColor="@color/white"
+                            android:layout_marginTop="52dp"
+                            android:layout_marginLeft="20dp"/>
+
+                        <ImageView
+                            android:id="@+id/reservation_img"
+                            android:layout_width="80dp"
+                            android:layout_height="90dp"
+                            android:background="@drawable/rounded_corner_border"
+                            android:scaleType="centerCrop"
+                            android:clipToOutline="true"
+                            android:layout_marginTop="130dp"
+                            android:layout_marginLeft="15dp"
+                            android:src="@drawable/data1"/>
+
+                        <TextView
+                            android:id="@+id/ticket_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="합스부르크 600년, 매혹의 걸작들"
+                            android:fontFamily="@font/notosanskrmedium"
+                            android:textSize="14sp"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="125dp"
+                            android:layout_marginLeft="110dp"/>
+
+                        <TextView
+                            android:id="@+id/ticket_period"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2021.11.09 ~ 2022.11.09"
+                            android:fontFamily="@font/notosanskrregular"
+                            android:textSize="12sp"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="162dp"
+                            android:layout_marginLeft="110dp"/>
+
+                        <TextView
+                            android:id="@+id/ticket_gallery"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="그라운드 시소"
+                            android:fontFamily="@font/notosanskrregular"
+                            android:textSize="12sp"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="182dp"
+                            android:layout_marginLeft="110dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="전시중"
+                            android:fontFamily="@font/notosanskrmedium"
+                            android:textSize="13sp"
+                            android:textColor="#8D78F6"
+                            android:layout_gravity="right"
+                            android:layout_marginTop="126dp"
+                            android:layout_marginRight="20dp"/>
+
+                    </FrameLayout>
+
+
+                    <FrameLayout
+                        android:id="@+id/recommend"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="140dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/blackbox"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="전시회 추천"
+                            android:fontFamily="@font/notosanskrmedium"
+                            android:textSize="20sp"
+                            android:textColor="@color/white"
+                            android:layout_marginTop="32dp"
+                            android:layout_marginLeft="20dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="7dp"
+                            android:text="힐링되는 전시회"
+                            android:layout_marginTop="90dp"
+                            android:fontFamily="@font/notosanskrregular"
+                            android:textColor="@color/black"
+                            android:textSize="15dp"/>
+
+                        <TextView
+                            android:id="@+id/more1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginTop="90dp"
+                            android:fontFamily="@font/notosanskrregular"
+                            android:text="더보기"
+                            android:onClick="mOnClick"
+                            android:textColor="#8D78F6"
+                            android:textSize="15dp" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recycler_view"
+                            android:layout_marginTop="130dp"
+                            android:layout_marginLeft="7dp"
+                            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                            android:paddingHorizontal="5dp"
+                            android:clipToPadding="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/recommend2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginTop="10dp"
+                            android:text="오감만족 전시회"
+                            android:fontFamily="@font/notosanskrregular"
+                            android:textColor="@color/black"
+                            android:textSize="15dp"/>
+
+                        <TextView
+                            android:id="@+id/more2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/notosanskrregular"
+                            android:text="더보기"
+                            android:onClick="mOnClick"
+                            android:textColor="#8D78F6"
+                            android:textSize="15dp" />
+
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recycler_view2"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginLeft="7dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/recommend3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Classic한 전시회"
+                            android:fontFamily="@font/notosanskrregular"
+                            android:textColor="@color/black"
+                            android:textSize="15dp"/>
+
+                        <TextView
+                            android:id="@+id/more3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/notosanskrregular"
+                            android:text="더보기"
+                            android:onClick="mOnClick"
+                            android:textColor="#8D78F6"
+                            android:textSize="15dp" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recycler_view3"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginLeft="7dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/recommend4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Hot한 전시회"
+                            android:fontFamily="@font/notosanskrregular"
+                            android:textColor="@color/black"
+                            android:textSize="15dp"/>
+
+                        <TextView
+                            android:id="@+id/more4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/notosanskrregular"
+                            android:text="더보기"
+                            android:onClick="mOnClick"
+                            android:textColor="#8D78F6"
+                            android:textSize="15dp" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recycler_view4"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginLeft="7dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+
+
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/recommend5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible">
+                        <ImageView
+                            android:layout_width="140dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/blackbox"/>
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="30dp"
+                            android:text="전시관 추천"
+                            android:fontFamily="@font/notosanskrmedium"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"/>
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginTop="90dp"
+                            android:text="Hot한 전시관"
+                            android:fontFamily="@font/notosanskrregular"
+                            android:textColor="@color/black"
+                            android:textSize="15dp"/>
+
+                        <TextView
+                            android:id="@+id/more5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginTop="90dp"
+                            android:fontFamily="@font/notosanskrregular"
+                            android:text="더보기"
+                            android:onClick="mOnClick"
+                            android:textColor="#8D78F6"
+                            android:textSize="15dp" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recycler_view5"
+                            android:layout_marginTop="130dp"
+                            android:layout_marginLeft="7dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+
+                    </FrameLayout>
+
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+        <ImageView
+            android:layout_width="400dp"
+            android:layout_height="160dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/bar_circle" />
+        <ImageView
+            android:layout_width="450dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="100dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/bar_ww"/>
+
+        <ImageView
+            android:layout_width="409dp"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:scaleType="fitXY"
+            android:src="@drawable/bar_nemo2"/>
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="20dp"
+            android:layout_height="24dp"
+            android:src="@drawable/homeicon"
+            android:layout_gravity="bottom"
+            android:onClick="mOnClick"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="60dp"/>
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="20dp"
+            android:layout_height="24dp"
+            android:src="@drawable/searchicon"
+            android:layout_gravity="bottom"
+            android:onClick="mOnClick"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="125dp"/>
+
+        <ImageView
+            android:id="@+id/ticket"
+            android:layout_width="80dp"
+            android:layout_height="85dp"
+            android:src="@drawable/ticketicon2"
+            android:layout_gravity="bottom"
+            android:onClick="mOnClick"
+            android:layout_marginLeft="170dp"/>
+        <ImageView
+            android:id="@+id/ticket2"
+            android:layout_width="50dp"
+            android:layout_height="55dp"
+            android:src="@drawable/ticketicon"
+            android:layout_gravity="bottom"
+            android:onClick="mOnClick"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="185dp"/>
+        <ImageView
+            android:id="@+id/position"
+            android:layout_width="20dp"
+            android:layout_height="24dp"
+            android:src="@drawable/placeicon"
+            android:layout_gravity="bottom"
+            android:onClick="mOnClick"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="270dp"/>
+        <ImageView
+            android:id="@+id/profile_icon"
+            android:layout_width="20dp"
+            android:layout_height="24dp"
+            android:src="@drawable/personicon"
+            android:layout_gravity="bottom"
+            android:onClick="mOnClick"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="340dp"/>
+    </FrameLayout>
+
+</FrameLayout>
+

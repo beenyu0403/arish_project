@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="35dp">
+        <ImageView
+            android:id="@+id/img_backnn2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/iconblackleft" />
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/searchnn"
+        android:layout_width="350dp"
+        android:layout_height="220dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/searchtext_img" />
+
+    <EditText
+        android:id="@+id/action_search"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:textSize="12dp"
+        android:hint="검색하세요."
+        android:background="@null"
+        android:inputType="text" />
+
+    <ImageView
+        android:id="@+id/img_search"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="98dp"
+        android:layout_gravity="right"
+        android:src="@drawable/icon_action_search"/>
+
+
+
+
+
+
+
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="150dp"
+    tools:context=".hhh">
+    <TextView
+        android:id="@+id/hhh_textView0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="인기순"
+        android:textSize="13sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+    <TextView
+        android:id="@+id/hhh_textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="|"
+        android:textSize="14sp"
+        android:layout_marginLeft="72dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+    <TextView
+        android:id="@+id/hhh_textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="최신순"
+        android:textSize="13dp"
+        android:layout_marginLeft="82dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="315dp"
+        android:layout_height="602dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hhh_textView2"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

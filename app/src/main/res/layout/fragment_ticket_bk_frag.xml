@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ticket_bk_frag"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:scaleType="centerCrop"
+            android:layout_height="150dp"
+            android:src="@drawable/mtb_add"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="최신순"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/notosanskrmedium"
+            android:textSize="18sp"
+            android:layout_gravity="bottom"
+            android:textColor="@color/black"/>
+    </FrameLayout>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp">
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="250dp"
+                    android:scaleType="centerCrop"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/data4"
+                    android:clipToOutline="true"
+                    android:background="@drawable/rounded_corner_border"/>
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="207dp"
+                    android:scaleType="centerCrop"
+                    android:layout_gravity="center_horizontal"
+                    android:clipToOutline="true"
+                    android:background="@drawable/rounded_corner_border"
+                    android:src="@drawable/black_box2"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="210dp"
+                    android:layout_marginLeft="80dp"
+                    android:text="프랑코 폰타나：컬러 인 라이프"
+                    android:fontFamily="@font/notosanskrmedium"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="245dp"
+                    android:layout_marginLeft="80dp"
+                    android:text="2022.11.12 ~ 2022.11.12"
+                    android:fontFamily="@font/notosanskrregular"
+                    android:textSize="13sp"
+                    android:textColor="#B0B0B0"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="265dp"
+                    android:layout_marginLeft="80dp"
+                    android:text="그라운드 시소 명동"
+                    android:fontFamily="@font/notosanskrregular"
+                    android:textSize="13sp"
+                    android:textColor="#B0B0B0"/>
+
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp">
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="250dp"
+                    android:scaleType="centerCrop"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/data5"
+                    android:clipToOutline="true"
+                    android:background="@drawable/rounded_corner_border"/>
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="205dp"
+                    android:layout_gravity="center_horizontal"
+                    android:clipToOutline="true"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/rounded_corner_border"
+                    android:src="@drawable/black_box2"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="210dp"
+                    android:layout_marginLeft="80dp"
+                    android:text="프랑코 폰타나：컬러 인 라이프"
+                    android:fontFamily="@font/notosanskrmedium"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="245dp"
+                    android:layout_marginLeft="80dp"
+                    android:text="2022.11.12 ~ 2022.11.12"
+                    android:fontFamily="@font/notosanskrregular"
+                    android:textSize="13sp"
+                    android:textColor="#B0B0B0"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="265dp"
+                    android:layout_marginLeft="80dp"
+                    android:text="그라운드 시소 명동"
+                    android:fontFamily="@font/notosanskrregular"
+                    android:textSize="13sp"
+                    android:textColor="#B0B0B0"/>
+
+            </FrameLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>

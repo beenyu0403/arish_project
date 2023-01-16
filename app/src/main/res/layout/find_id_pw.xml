@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:theme="@style/ThemeOverlay.Loginlogin.FullscreenContainer"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="35dp">
+        <ImageView
+            android:id="@+id/img_back5"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/iconblackleft" />
+
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="아이디/비밀번호 찾기"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:src="@drawable/regi_btn"/>
+    <TextView
+        android:id="@+id/findID_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="아이디 찾기"
+        android:onClick="mOnClick"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:textSize="20dp"
+        android:textColor="@color/white"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/login_btn"/>
+    <TextView
+        android:id="@+id/findPW_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="비밀번호 찾기"
+        android:onClick="mOnClick"
+        android:layout_gravity="center"
+        android:layout_marginTop="90dp"
+        android:textSize="20dp"
+        android:textColor="@color/white"/>
+</FrameLayout>

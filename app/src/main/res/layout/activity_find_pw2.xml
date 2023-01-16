@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:theme="@style/ThemeOverlay.Loginlogin.FullscreenContainer"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="170dp"
+            android:src="@drawable/mail_img3" />
+
+        <ImageView
+
+            android:layout_width="339dp"
+            android:layout_height="318dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/mail_img" />
+    </FrameLayout>
+
+
+    <ImageView
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+
+        android:src="@drawable/signuplogo3_text1" />
+    <ImageView
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/signuplogo3_text2" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+
+        <android.widget.Button
+            android:id="@+id/login_button3"
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="30dp"
+            android:onClick="mOnClick"
+            android:text="로그인 하기"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:background="@drawable/solid_button_st3"
+            android:ems="10"
+            android:textSize="18sp" />
+    </LinearLayout>
+</LinearLayout>
